@@ -22,7 +22,8 @@ html {
                 .title {
                     width: 392px;
                     height: 172px;
-                    animation: lag 2s linear 0s 1;
+                    animation: lag2 2s linear 1s 1;
+                    animation-fill-mode: both;
                 }
 
                 p {
@@ -30,7 +31,8 @@ html {
                     font-size: 24px;
                     text-align: end;
                     margin-top: 33px;
-                    animation: lag 1.5s linear 1s infinite;
+                    animation: lag 1.5s linear 1.5s infinite;
+                    animation-fill-mode: both;
                 }
             }
 
@@ -38,10 +40,11 @@ html {
             .logo {
                 width: 494px;
                 height: 186px;
-                animation: lag 2s linear 0s 1;
+                animation: lag2 2s linear 0.2s 1;
                 position: absolute;
                 top: 96px;
                 left: 33px;
+                animation-fill-mode: both;
             }
 
         }
@@ -62,7 +65,7 @@ html {
             top: 435px;
             left: 50%;
             transform: translateX(-50%);
-            animation: gear 1.5s linear .5s 1;
+            animation: gear 1.5s linear 1.4s 1;
             animation-fill-mode: both;
 
             .gear1 {
@@ -117,7 +120,7 @@ html {
         transform: translateX(0%) translateY(0%);
     }
     50%{
-        transform: translateX(-0.2%) translateY(0.5%);
+        transform: translateX(-0.2%) translateY(0.8%);
     }
     80%{
         transform: translateX(0.5%) translateY(-0.5%);
@@ -165,6 +168,15 @@ html {
     }
     100% {
         opacity: 0;
+    }
+}
+
+@keyframes lag2 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 

@@ -159,25 +159,31 @@ html body .container .txtItem {
 html body .container .txtItem .title {
   width: 392px;
   height: 172px;
-  -webkit-animation: lag 2s linear 0s 1;
-          animation: lag 2s linear 0s 1;
+  -webkit-animation: lag2 2s linear 1s 1;
+          animation: lag2 2s linear 1s 1;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 html body .container .txtItem p {
   color: #001b47;
   font-size: 24px;
   text-align: end;
   margin-top: 33px;
-  -webkit-animation: lag 1.5s linear 1s infinite;
-          animation: lag 1.5s linear 1s infinite;
+  -webkit-animation: lag 1.5s linear 1.5s infinite;
+          animation: lag 1.5s linear 1.5s infinite;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 html body .container .logo {
   width: 494px;
   height: 186px;
-  -webkit-animation: lag 2s linear 0s 1;
-          animation: lag 2s linear 0s 1;
+  -webkit-animation: lag2 2s linear 0.2s 1;
+          animation: lag2 2s linear 0.2s 1;
   position: absolute;
   top: 96px;
   left: 33px;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 html body .bg {
   width: 100%;
@@ -196,8 +202,8 @@ html body .gearGroup {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-animation: gear 1.5s linear 0.5s 1;
-          animation: gear 1.5s linear 0.5s 1;
+  -webkit-animation: gear 1.5s linear 1.4s 1;
+          animation: gear 1.5s linear 1.4s 1;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -272,8 +278,8 @@ html body .gearGroup .gear3 {
             transform: translateX(0%) translateY(0%);
   }
   50% {
-    -webkit-transform: translateX(-0.2%) translateY(0.5%);
-            transform: translateX(-0.2%) translateY(0.5%);
+    -webkit-transform: translateX(-0.2%) translateY(0.8%);
+            transform: translateX(-0.2%) translateY(0.8%);
   }
   80% {
     -webkit-transform: translateX(0.5%) translateY(-0.5%);
@@ -290,8 +296,8 @@ html body .gearGroup .gear3 {
             transform: translateX(0%) translateY(0%);
   }
   50% {
-    -webkit-transform: translateX(-0.2%) translateY(0.5%);
-            transform: translateX(-0.2%) translateY(0.5%);
+    -webkit-transform: translateX(-0.2%) translateY(0.8%);
+            transform: translateX(-0.2%) translateY(0.8%);
   }
   80% {
     -webkit-transform: translateX(0.5%) translateY(-0.5%);
@@ -394,6 +400,22 @@ html body .gearGroup .gear3 {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes lag2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes lag2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @-webkit-keyframes float1 {
