@@ -159,8 +159,8 @@ html body .container .txtItem {
 html body .container .txtItem .title {
   width: 392px;
   height: 172px;
-  -webkit-animation: lag2 2s linear 1s 1;
-          animation: lag2 2s linear 1s 1;
+  -webkit-animation: lag2 0.5s ease-in-out 0.5s 1;
+          animation: lag2 0.5s ease-in-out 0.5s 1;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -177,8 +177,8 @@ html body .container .txtItem p {
 html body .container .logo {
   width: 494px;
   height: 186px;
-  -webkit-animation: lag2 2s linear 0.2s 1;
-          animation: lag2 2s linear 0.2s 1;
+  -webkit-animation: lag2 0.5s ease-in-out 0.2s 1;
+          animation: lag2 0.5s ease-in-out 0.2s 1;
   position: absolute;
   top: 96px;
   left: 33px;
@@ -405,17 +405,45 @@ html body .gearGroup .gear3 {
 @-webkit-keyframes lag2 {
   0% {
     opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 @keyframes lag2 {
   0% {
     opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleY(1.1);
+            transform: scaleY(1.1);
+  }
+  80% {
+    opacity: 1;
+    -webkit-transform: scaleY(0.8);
+            transform: scaleY(0.8);
   }
   100% {
     opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
 }
 @-webkit-keyframes float1 {

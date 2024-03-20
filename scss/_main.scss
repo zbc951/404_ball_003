@@ -22,7 +22,7 @@ html {
                 .title {
                     width: 392px;
                     height: 172px;
-                    animation: lag2 2s linear 1s 1;
+                    animation: lag2 .5s ease-in-out 0.5s 1;
                     animation-fill-mode: both;
                 }
 
@@ -40,7 +40,7 @@ html {
             .logo {
                 width: 494px;
                 height: 186px;
-                animation: lag2 2s linear 0.2s 1;
+                animation: lag2 .5s ease-in-out 0.2s 1;
                 position: absolute;
                 top: 96px;
                 left: 33px;
@@ -129,6 +129,7 @@ html {
         transform: translateX(0%) translateY(0%);
     }
 }
+
 @keyframes gear2 {
     0%{
         transform: translateX(0%) translateY(0%);
@@ -174,9 +175,19 @@ html {
 @keyframes lag2 {
     0% {
         opacity: 0;
+        transform: scaleY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scaleY(1.1);
+    }
+    80% {
+        opacity: 1;
+        transform: scaleY(0.8);
     }
     100% {
         opacity: 1;
+        transform: scaleY(1);
     }
 }
 
@@ -197,3 +208,4 @@ html {
         transform: translateY(-10%);
     }
 }
+
