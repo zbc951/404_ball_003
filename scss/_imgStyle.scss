@@ -5,7 +5,19 @@ body .bg {
     background: url('../img/title.png') no-repeat center;
     background-size: contain;
 }
-body .gearGroup {
-    background: url('../img/gear.png')no-repeat center;
+// body .gearGroup {
+//     background: url('../img/gear.png')no-repeat center;
+//     background-size: contain;
+// }
+body  .gearGroup .gear1 {
+    background: url('../img/gear1.png')no-repeat center;
+    background-size: contain;
+}
+body .gearGroup .gear2 {
+    background: url('../img/gear2.png')no-repeat center;
+    background-size: contain;
+}
+body .gearGroup .gear3 {
+    background: url('../img/gear3.png')no-repeat center;
     background-size: contain;
 }
